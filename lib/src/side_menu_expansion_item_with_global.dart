@@ -95,7 +95,7 @@ class _SideMenuExpansionState extends State<SideMenuExpansionItemWithGlobal> {
           ),
           horizontalTitleGap: 0,
           child: ExpansionTile(
-              childrenPadding: const EdgeInsets.only(left: 21),
+              childrenPadding: const EdgeInsets.only(left: 18),
               leading: SizedBox(
                 // Ensures the icon does not take the full tile width
                 width: 40.0, // Adjust size constraints as required
@@ -123,12 +123,12 @@ class _SideMenuExpansionState extends State<SideMenuExpansionItemWithGlobal> {
                       widget.title ?? '',
                       style: widget.global.expansionStateList[widget.index]
                           ? GoogleFonts.montserrat(
-                                  fontSize: 17, color: Colors.black)
+                                  fontSize: 15, color: Colors.black)
                               .merge(widget.global.style
                                       .selectedTitleTextStyleExpandable ??
                                   widget.global.style.selectedTitleTextStyle)
                           : GoogleFonts.montserrat(
-                                  fontSize: 17, color: Colors.black54)
+                                  fontSize: 15, color: Colors.black54)
                               .merge(widget.global.style
                                       .unselectedTitleTextStyleExpandable ??
                                   widget.global.style.unselectedTitleTextStyle),
