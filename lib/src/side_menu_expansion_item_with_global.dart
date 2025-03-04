@@ -112,7 +112,7 @@ class _SideMenuExpansionState extends State<SideMenuExpansionItemWithGlobal> {
                     ?.call(widget.index, widget.global.controller, value);
               },
               trailing: Icon(
-                isExpanded ? Icons.percent : Icons.arrow_drop_down,
+                isExpanded ? Icons.arrow_drop_up : Icons.arrow_drop_down,
                 color: isExpanded
                     ? widget.global.style.arrowOpen
                     : widget.global.style.arrowCollapse,
