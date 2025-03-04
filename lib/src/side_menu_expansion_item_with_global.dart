@@ -95,14 +95,14 @@ class _SideMenuExpansionState extends State<SideMenuExpansionItemWithGlobal> {
           ),
           horizontalTitleGap: 0,
           child: ExpansionTile(
-              childrenPadding: const EdgeInsets.only(left: 18),
+              childrenPadding: const EdgeInsets.only(left: 17),
               leading: SizedBox(
                 // Ensures the icon does not take the full tile width
                 width: 40.0, // Adjust size constraints as required
                 child: _generateIconWidget(widget.icon, widget.iconWidget),
               ),
               // The title should only take space when SideMenuDisplayMode is open
-              maintainState: true,
+
               onExpansionChanged: (value) {
                 setState(() {
                   isExpanded = value;
@@ -112,7 +112,7 @@ class _SideMenuExpansionState extends State<SideMenuExpansionItemWithGlobal> {
                     ?.call(widget.index, widget.global.controller, value);
               },
               trailing: Icon(
-                isExpanded ? Icons.arrow_drop_up : Icons.arrow_drop_down,
+                isExpanded ? Icons.percent : Icons.arrow_drop_down,
                 color: isExpanded
                     ? widget.global.style.arrowOpen
                     : widget.global.style.arrowCollapse,
